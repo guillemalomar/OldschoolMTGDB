@@ -104,5 +104,4 @@ venv.bak/
 .mypy_cache/
 
 .idea
-decks/migrations/*
-!decks/migrations/__init__.py
+decks/migrations/0*

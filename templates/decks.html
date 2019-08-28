@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block title %}
+  {{ tournament.name }} - {{ tournament.super }}
+{% endblock %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Tournaments</a></li>
+  <li class="breadcrumb-item active">{{ tournament.name }}</li>
+{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <a href="{% url 'new_deck' tournament.pk %}" class="btn btn-primary">New deck</a>
+  </div>
+
+  <table class="table table-striped mb-4">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Deck</th>
+        <th>Starter</th>
+        <th>Replies</th>
+        <th>Views</th>
+        <th>Last Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for deck in decks %}
+        {% url 'deck_cards' tournament.pk deck.pk as deck_url %}
+        <tr>
+          <td>
+            <p class="mb-0">
+              <a href="{{ deck_url }}">{{ deck.subject }}</a>
+            </p>
+            <small class="text-muted">
+              Pages:
+              {% for i in deck.get_page_range %}
+                <a href="{{ deck_url }}?page={{ i }}">{{ i }}</a>
+              {% endfor %}
+              {% if deck.has_many_pages %}
+              ... <a href="{{ deck_url }}?page={{ deck.get_page_count }}">Last Page</a>
+              {% endif %}
+            </small>
+          </td>
+          <td class="align-middle">{{ deck.starter.username }}</td>
+          <td class="align-middle">{{ deck.replies }}</td>
+          <td class="align-middle">{{ deck.views }}</td>
+          <td class="align-middle">{{ deck.last_updated|naturaltime }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% include 'includes/pagination.html' %}
+
+{% endblock %}

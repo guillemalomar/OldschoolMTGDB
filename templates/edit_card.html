@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}Edit post{% endblock %}
+{% block title %}Edit card{% endblock %}
 
 {% block stylesheet %}
   <link rel="stylesheet" href="{% static 'css/simplemde.min.css' %}">
@@ -17,9 +17,9 @@
 
 {% block breadcrumb %}
   <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
-  <li class="breadcrumb-item"><a href="{% url 'board_topics' post.topic.board.pk %}">{{ post.topic.board.name }}</a></li>
-  <li class="breadcrumb-item"><a href="{% url 'topic_posts' post.topic.board.pk post.topic.pk %}">{{ post.topic.subject }}</a></li>
-  <li class="breadcrumb-item active">Edit post</li>
+  <li class="breadcrumb-item"><a href="{% url 'tournament_decks' card.deck.tournament.pk %}">{{ card.deck.tournament.name }}</a></li>
+  <li class="breadcrumb-item"><a href="{% url 'deck_cards' card.deck.tournament.pk card.deck.pk %}">{{ card.deck.subject }}</a></li>
+  <li class="breadcrumb-item active">Edit card</li>
 {% endblock %}
 
 {% block content %}
@@ -27,6 +27,6 @@
     {% csrf_token %}
     {% include 'includes/form.html' %}
     <button type="submit" class="btn btn-success">Save changes</button>
-    <a href="{% url 'topic_posts' post.topic.board.pk post.topic.pk %}" class="btn btn-outline-secondary" role="button">Cancel</a>
+    <a href="{% url 'deck_cards' card.deck.tournament.pk card.deck.pk %}" class="btn btn-outline-secondary" role="button">Cancel</a>
   </form>
 {% endblock %}

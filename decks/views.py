@@ -7,116 +7,116 @@ from django.utils import timezone
 from django.utils.decorators import method_decorator
 from django.urls import reverse
 
-from .forms import NewTopicForm, PostForm
-from .models import Deck, Post, Topic
+from .forms import NewDeckForm, CardForm
+from .models import Tournament, Card, Deck
+
+
+class TournamentsListView(ListView):
+    model = Tournament
+    context_object_name = 'tournaments'
+    template_name = 'home.html'
 
 
 class DeckListView(ListView):
     model = Deck
     context_object_name = 'decks'
-    template_name = 'home.html'
-
-
-class TopicListView(ListView):
-    model = Topic
-    context_object_name = 'topics'
-    template_name = 'topics.html'
+    template_name = 'decks.html'
     paginate_by = 20
 
     def get_context_data(self, **kwargs):
+        kwargs['tournament'] = self.tournament
+        return super().get_context_data(**kwargs)
+
+    def get_queryset(self):
+        self.tournament = get_object_or_404(Tournament, pk=self.kwargs.get('pk'))
+        queryset = self.tournament.decks.order_by('-last_updated').annotate(replies=Count('cards') - 1)
+        return queryset
+
+
+class CardListView(ListView):
+    model = Card
+    context_object_name = 'cards'
+    template_name = 'deck_cards.html'
+    paginate_by = 20
+
+    def get_context_data(self, **kwargs):
+        session_key = 'viewed_deck_{}'.format(self.deck.pk)
+        if not self.request.session.get(session_key, False):
+            self.deck.views += 1
+            self.deck.save()
+            self.request.session[session_key] = True
         kwargs['deck'] = self.deck
         return super().get_context_data(**kwargs)
 
     def get_queryset(self):
-        self.deck = get_object_or_404(Deck, pk=self.kwargs.get('pk'))
-        queryset = self.deck.topics.order_by('-last_updated').annotate(replies=Count('posts') - 1)
-        return queryset
-
-
-class PostListView(ListView):
-    model = Post
-    context_object_name = 'posts'
-    template_name = 'topic_posts.html'
-    paginate_by = 20
-
-    def get_context_data(self, **kwargs):
-        session_key = 'viewed_topic_{}'.format(self.topic.pk)
-        if not self.request.session.get(session_key, False):
-            self.topic.views += 1
-            self.topic.save()
-            self.request.session[session_key] = True
-        kwargs['topic'] = self.topic
-        return super().get_context_data(**kwargs)
-
-    def get_queryset(self):
-        self.topic = get_object_or_404(Topic, deck__pk=self.kwargs.get('pk'), pk=self.kwargs.get('topic_pk'))
-        queryset = self.topic.posts.order_by('created_at')
+        self.deck = get_object_or_404(Deck, tournament__pk=self.kwargs.get('pk'), pk=self.kwargs.get('deck_pk'))
+        queryset = self.deck.cards.order_by('created_at')
         return queryset
 
 
 @login_required
-def new_topic(request, pk):
-    deck = get_object_or_404(Deck, pk=pk)
+def new_deck(request, pk):
+    tournament = get_object_or_404(Tournament, pk=pk)
     if request.method == 'POST':
-        form = NewTopicForm(request.POST)
+        form = NewDeckForm(request.POST)
         if form.is_valid():
-            topic = form.save(commit=False)
-            topic.deck = deck
-            topic.starter = request.user
-            topic.save()
-            Post.objects.create(
+            deck = form.save(commit=False)
+            deck.tournament = tournament
+            deck.starter = request.user
+            deck.save()
+            Card.objects.create(
                 message=form.cleaned_data.get('message'),
-                topic=topic,
+                deck=deck,
                 created_by=request.user
             )
-            return redirect('topic_posts', pk=pk, topic_pk=topic.pk)
+            return redirect('deck_cards', pk=pk, deck_pk=deck.pk)
     else:
-        form = NewTopicForm()
-    return render(request, 'new_topic.html', {'deck': deck, 'form': form})
+        form = NewDeckForm()
+    return render(request, 'new_deck.html', {'tournament': tournament, 'form': form})
 
 
 @login_required
-def reply_topic(request, pk, topic_pk):
-    topic = get_object_or_404(Topic, deck__pk=pk, pk=topic_pk)
+def reply_deck(request, pk, deck_pk):
+    deck = get_object_or_404(Deck, tournament__pk=pk, pk=deck_pk)
     if request.method == 'POST':
-        form = PostForm(request.POST)
+        form = CardForm(request.POST)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.topic = topic
-            post.created_by = request.user
-            post.save()
+            card = form.save(commit=False)
+            card.deck = deck
+            card.created_by = request.user
+            card.save()
 
-            topic.last_updated = timezone.now()
-            topic.save()
+            deck.last_updated = timezone.now()
+            deck.save()
 
-            topic_url = reverse('topic_posts', kwargs={'pk': pk, 'topic_pk': topic_pk})
-            topic_post_url = '{url}?page={page}#{id}'.format(
-                url=topic_url,
-                id=post.pk,
-                page=topic.get_page_count()
+            deck_url = reverse('deck_cards', kwargs={'pk': pk, 'deck_pk': deck_pk})
+            deck_card_url = '{url}?page={page}#{id}'.format(
+                url=deck_url,
+                id=card.pk,
+                page=deck.get_page_count()
             )
 
-            return redirect(topic_post_url)
+            return redirect(deck_card_url)
     else:
-        form = PostForm()
-    return render(request, 'reply_topic.html', {'topic': topic, 'form': form})
+        form = CardForm()
+    return render(request, 'reply_deck.html', {'deck': deck, 'form': form})
 
 
 @method_decorator(login_required, name='dispatch')
-class PostUpdateView(UpdateView):
-    model = Post
+class CardUpdateView(UpdateView):
+    model = Card
     fields = ('message', )
-    template_name = 'edit_post.html'
-    pk_url_kwarg = 'post_pk'
-    context_object_name = 'post'
+    template_name = 'edit_card.html'
+    pk_url_kwarg = 'card_pk'
+    context_object_name = 'card'
 
     def get_queryset(self):
         queryset = super().get_queryset()
         return queryset.filter(created_by=self.request.user)
 
     def form_valid(self, form):
-        post = form.save(commit=False)
-        post.updated_by = self.request.user
-        post.updated_at = timezone.now()
-        post.save()
-        return redirect('topic_posts', pk=post.topic.deck.pk, topic_pk=post.topic.pk)
+        card = form.save(commit=False)
+        card.updated_by = self.request.user
+        card.updated_at = timezone.now()
+        card.save()
+        return redirect('deck_cards', pk=card.deck.tournament.pk, deck_pk=card.deck.pk)

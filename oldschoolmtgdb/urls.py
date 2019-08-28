@@ -21,7 +21,7 @@ from accounts import views as accounts_views
 from decks import views
 
 urlpatterns = [
-    url(r'^$', views.DeckListView.as_view(), name='home'),
+    url(r'^$', views.TournamentsListView.as_view(), name='home'),
     url(r'^signup/$',
         accounts_views.signup,
         name='signup'),
@@ -57,18 +57,21 @@ urlpatterns = [
     url(r'^settings/password/done/$',
         auth_views.PasswordChangeDoneView.as_view(template_name='password_change_done.html'),
         name='password_change_done'),
+
+    url(r'^tournaments/(?P<pk>\d+)/$',
+        views.DeckListView.as_view(),
+        name='tournament_decks'),
+    url(r'^tournaments/(?P<pk>\d+)/new/$',
+        views.new_deck,
+        name='new_deck'),
+    url(r'^tournaments/(?P<pk>\d+)/decks/(?P<deck_pk>\d+)/$',
+        views.CardListView.as_view(),
+        name='deck_cards'),
+    url(r'^tournaments/(?P<pk>\d+)/decks/(?P<deck_pk>\d+)/reply/$',
+        views.reply_deck,
+        name='reply_deck'),
+    url(r'^tournaments/(?P<pk>\d+)/decks/(?P<deck_pk>\d+)/cards/(?P<card_pk>\d+)/edit/$',
+        views.CardUpdateView.as_view(),
+        name='edit_card'),
     url(r'^admin/', admin.site.urls),
 ]
-
-'''
-url(r'^boards/(?P<pk>\d+)/$',
-    views.TopicListView.as_view(),
-    name='board_topics'),
-url(r'^boards/(?P<pk>\d+)/new/$',
-    views.new_topic,
-    name='new_topic'),
-url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/$', views.PostListView.as_view(), name='topic_posts'),
-url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/reply/$', views.reply_topic, name='reply_topic'),
-url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/posts/(?P<post_pk>\d+)/edit/$',
-    views.PostUpdateView.as_view(), name='edit_post'),
-'''

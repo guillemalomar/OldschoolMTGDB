@@ -1,9 +1,9 @@
 from django import forms
 
-from .models import Post, Topic
+from .models import Card, Deck
 
 
-class NewTopicForm(forms.ModelForm):
+class NewDeckForm(forms.ModelForm):
     message = forms.CharField(
         widget=forms.Textarea(
             attrs={'rows': 5, 'placeholder': 'What is in your mind?'}
@@ -13,11 +13,11 @@ class NewTopicForm(forms.ModelForm):
     )
 
     class Meta:
-        model = Topic
+        model = Deck
         fields = ['subject', 'message']
 
 
-class PostForm(forms.ModelForm):
+class CardForm(forms.ModelForm):
     class Meta:
-        model = Post
+        model = Card
         fields = ['message', ]

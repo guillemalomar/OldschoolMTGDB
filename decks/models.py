@@ -8,32 +8,32 @@ from django.utils.text import Truncator
 from markdown import markdown
 
 
-class Deck(models.Model):
+class Tournament(models.Model):
     name = models.CharField(max_length=30, unique=True)
     description = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
 
-    def get_posts_count(self):
-        return Post.objects.filter(topic__board=self).count()
+    def get_cards_count(self):
+        return Card.objects.filter(deck__tournament=self).count()
 
-    def get_last_post(self):
-        return Post.objects.filter(topic__board=self).order_by('-created_at').first()
+    def get_last_card(self):
+        return Card.objects.filter(deck__tournament=self).order_by('-created_at').first()
 
 
-class Topic(models.Model):
+class Deck(models.Model):
     subject = models.CharField(max_length=255)
     last_updated = models.DateTimeField(auto_now_add=True)
-    board = models.ForeignKey(Deck, related_name='topics')
-    starter = models.ForeignKey(User, related_name='topics')
+    tournament = models.ForeignKey(Tournament, related_name='decks')
+    starter = models.ForeignKey(User, related_name='decks')
     views = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return self.subject
 
     def get_page_count(self):
-        count = self.posts.count()
+        count = self.cards.count()
         pages = count / 20
         return math.ceil(pages)
 
@@ -48,16 +48,16 @@ class Topic(models.Model):
             return range(1, 5)
         return range(1, count + 1)
 
-    def get_last_ten_posts(self):
-        return self.posts.order_by('-created_at')[:10]
+    def get_last_ten_cards(self):
+        return self.cards.order_by('-created_at')[:10]
 
 
-class Post(models.Model):
+class Card(models.Model):
     message = models.TextField(max_length=4000)
-    topic = models.ForeignKey(Topic, related_name='posts')
+    deck = models.ForeignKey(Deck, related_name='cards')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(null=True)
-    created_by = models.ForeignKey(User, related_name='posts')
+    created_by = models.ForeignKey(User, related_name='cards')
     updated_by = models.ForeignKey(User, null=True, related_name='+')
 
     def __str__(self):

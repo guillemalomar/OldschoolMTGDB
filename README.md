@@ -1,6 +1,6 @@
 # OldschoolMTGDB
 
-*    Authors: Guillem Alomar and Lluis Cortés   
+*    Authors: Guillem Alomar and Lluís Cortès   
 *    Current release: August 28th, 2019                     
 *    Code version: 0.1                      
 *    Availability: Public

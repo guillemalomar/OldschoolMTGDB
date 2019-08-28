@@ -10,7 +10,9 @@ from markdown import markdown
 
 class Tournament(models.Model):
     name = models.CharField(max_length=30, unique=True)
-    description = models.CharField(max_length=100)
+    date = models.DateField()
+    city = models.CharField(max_length=30)
+    country = models.CharField(max_length=30)
 
     def __str__(self):
         return self.name

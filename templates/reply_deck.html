@@ -18,7 +18,7 @@
 {% block breadcrumb %}
   <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
   <li class="breadcrumb-item"><a href="{% url 'tournament_decks' deck.tournament.pk %}">{{ deck.tournament.name }}</a></li>
-  <li class="breadcrumb-item"><a href="{% url 'deck_cards' topic.tournament.pk topic.pk %}">{{ topic.subject }}</a></li>
+  <li class="breadcrumb-item"><a href="{% url 'deck_cards' deck.tournament.pk deck.pk %}">{{ deck.subject }}</a></li>
   <li class="breadcrumb-item active">Post a reply</li>
 {% endblock %}
 

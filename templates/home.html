@@ -21,7 +21,9 @@
         <tr>
           <td>
             <a href="{% url 'tournament_decks' tournament.pk %}">{{ tournament.name }}</a>
-            <small class="text-muted d-block">{{ tournament.description }}</small>
+            <small class="text-muted d-block">{{ tournament.city }}</small>
+            <small class="text-muted d-block">{{ tournament.country }}</small>
+            <small class="text-muted d-block">{{ tournament.date }}</small>
           </td>
           <td class="align-middle">
             {{ tournament.get_cards_count }}

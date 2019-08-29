@@ -22,9 +22,12 @@ Programming language
 - Python +3.7
 
 PIP packages
-- Django 1.11.23
+- beautifulsoup4 4.8.0
+- Django 2.2.4
 - django-widget-tweaks 1.4.1
+- djongo 1.2.35
 - Markdown 2.6.9
+- requests 2.22.0
 
 ## Documentation
 
@@ -61,6 +64,12 @@ You now need to initialize the database with the following commands:
 (venv) ~/OldschoolMTGDB$ python manage.py makemigrations
 (venv) ~/OldschoolMTGDB$ python manage.py migrate
 ```
+After this, we can load the cards data and the tournaments data:
+```
+(venv) ~/OldschoolMTGDB$ mongoimport -d decks -c decks_card data/os_cards.json
+(venv) ~/OldschoolMTGDB$ mongoimport -d decks -c decks_tournament data/os_tournaments.json
+```
+(this step isn't ready yet, working on it)
 
 #### Admin user set up
 

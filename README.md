@@ -66,8 +66,8 @@ You now need to initialize the database with the following commands:
 ```
 After this, we can load the cards data and the tournaments data:
 ```
-(venv) ~/OldschoolMTGDB$ mongoimport -d decks -c decks_card data/os_cards.json
-(venv) ~/OldschoolMTGDB$ mongoimport -d decks -c decks_tournament data/os_tournaments.json
+(venv) ~/OldschoolMTGDB$ mongoimport -d decks -c decks_card data/files/os_cards.json
+(venv) ~/OldschoolMTGDB$ mongoimport -d decks -c decks_tournament data/files/os_tournaments.json
 ```
 (this step isn't ready yet, working on it)
 

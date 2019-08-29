@@ -27,8 +27,8 @@ class Tournament(models.Model):
 class Deck(models.Model):
     subject = models.CharField(max_length=255)
     last_updated = models.DateTimeField(auto_now_add=True)
-    tournament = models.ForeignKey(Tournament, related_name='decks')
-    starter = models.ForeignKey(User, related_name='decks')
+    tournament = models.ForeignKey(Tournament, related_name='decks', on_delete=models.CASCADE)
+    starter = models.ForeignKey(User, related_name='decks', on_delete=models.CASCADE)
     views = models.PositiveIntegerField(default=0)
 
     def __str__(self):
@@ -56,11 +56,11 @@ class Deck(models.Model):
 
 class Card(models.Model):
     message = models.TextField(max_length=4000)
-    deck = models.ForeignKey(Deck, related_name='cards')
+    deck = models.ForeignKey(Deck, related_name='cards', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(null=True)
-    created_by = models.ForeignKey(User, related_name='cards')
-    updated_by = models.ForeignKey(User, null=True, related_name='+')
+    created_by = models.ForeignKey(User, related_name='cards', on_delete=models.CASCADE)
+    updated_by = models.ForeignKey(User, null=True, related_name='+', on_delete=models.CASCADE)
 
     def __str__(self):
         truncated_message = Truncator(self.message)

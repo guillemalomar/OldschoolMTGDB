@@ -9,3 +9,7 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2')
+
+
+
+# community = forms.ChoiceField(initial=1, choices=((1, 'None'), (2, 'LCOS'), (3, 'LMOS'), (4, 'Lords of the Pit'), (5, 'El Norte No Olvida'), (6, 'LIOS')))

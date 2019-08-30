@@ -1,0 +1,171 @@
+{
+    "_id": "f609f40b9f96647b5ade7f39049b1ac1",
+    "tournament": "75160211e6714d57ce28aacdeee39c15",
+    "player_name": "Tatsuya Kitagawa",
+    "position": 1,
+    "deck_name": "Disco Troll",
+    "date": "17/08/2019",
+    "num_players": "Unknown",
+    "cards": {
+        "maindeck": [
+            [
+                " Guardian Beast",
+                1
+            ],
+            [
+                " Sol'kanar the Swamp King",
+                1
+            ],
+            [
+                " Sedge Troll",
+                4
+            ],
+            [
+                " Ancestral Recall",
+                1
+            ],
+            [
+                " Mana Drain",
+                1
+            ],
+            [
+                " Psionic Blast",
+                1
+            ],
+            [
+                " Spell Blast",
+                1
+            ],
+            [
+                " Power Sink",
+                2
+            ],
+            [
+                " Counterspell",
+                4
+            ],
+            [
+                " Lightning Bolt",
+                4
+            ],
+            [
+                " Braingeyser",
+                1
+            ],
+            [
+                " Demonic Tutor",
+                1
+            ],
+            [
+                " Fireball",
+                1
+            ],
+            [
+                " Mind Twist",
+                1
+            ],
+            [
+                " Recall",
+                1
+            ],
+            [
+                " Time Walk",
+                1
+            ],
+            [
+                " Black Lotus",
+                1
+            ],
+            [
+                " Chaos Orb",
+                1
+            ],
+            [
+                " Mox Jet",
+                1
+            ],
+            [
+                " Mox Ruby",
+                1
+            ],
+            [
+                " Mox Sapphire",
+                1
+            ],
+            [
+                " Sol Ring",
+                1
+            ],
+            [
+                " Nevinyrral's Disk",
+                4
+            ],
+            [
+                " Library of Alexandria",
+                1
+            ],
+            [
+                " City of Brass",
+                2
+            ],
+            [
+                " Island",
+                2
+            ],
+            [
+                " Volcanic Island",
+                3
+            ],
+            [
+                " Badlands",
+                4
+            ],
+            [
+                " Mishra's Factory",
+                4
+            ],
+            [
+                " Strip Mine",
+                4
+            ],
+            [
+                " Underground Sea",
+                4
+            ]
+        ],
+        "sideboard": [
+            [
+                " Blue Elemental Blast",
+                3
+            ],
+            [
+                " Red Elemental Blast",
+                3
+            ],
+            [
+                " Ivory Tower",
+                1
+            ],
+            [
+                " City in a Bottle",
+                2
+            ],
+            [
+                " Shatter",
+                1
+            ],
+            [
+                " Control Magic",
+                2
+            ],
+            [
+                " Shatterstorm",
+                2
+            ],
+            [
+                " Amnesia",
+                1
+            ]
+        ]
+    }
+}

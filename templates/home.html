@@ -11,40 +11,18 @@
     <thead class="thead-inverse">
       <tr>
         <th>Tournaments</th>
-        <th>Cards</th>
         <th>Decks</th>
-        <th>Last Card</th>
       </tr>
     </thead>
     <tbody>
       {% for tournament in tournaments %}
         <tr>
           <td>
-            <a href="{% url 'tournament_decks' tournament.pk %}">{{ tournament.name }}</a>
-            <small class="text-muted d-block">{{ tournament.city }}</small>
-            <small class="text-muted d-block">{{ tournament.country }}</small>
+            <a href="{% url 'deck_tournaments' tournament.pk %}">{{ tournament.name }}</a>
             <small class="text-muted d-block">{{ tournament.date }}</small>
           </td>
           <td class="align-middle">
-            {{ tournament.get_cards_count }}
-          </td>
-          <td class="align-middle">
-            {{ tournament.decks.count }}
-          </td>
-          <td class="align-middle">
-            {% with card=tournament.get_last_card %}
-              {% if card %}
-                <small>
-                  <a href="{% url 'deck_cards' tournament.pk card.deck.pk %}">
-                    By {{ card.created_by.username }} {{ card.created_at|naturaltime }}
-                  </a>
-                </small>
-              {% else %}
-                <small class="text-muted">
-                  <em>No cards yet.</em>
-                </small>
-              {% endif %}
-            {% endwith %}
+            {{ tournament.get_decks_count }}
           </td>
         </tr>
       {% endfor %}

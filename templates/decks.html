@@ -20,19 +20,15 @@
     <thead class="thead-inverse">
       <tr>
         <th>Deck</th>
-        <th>Starter</th>
-        <th>Replies</th>
-        <th>Views</th>
-        <th>Last Update</th>
       </tr>
     </thead>
     <tbody>
       {% for deck in decks %}
-        {% url 'deck_cards' tournament.pk deck.pk as deck_url %}
+        {% url 'deck_cards' tournament._id deck.tournament as deck_url %}
         <tr>
           <td>
             <p class="mb-0">
-              <a href="{{ deck_url }}">{{ deck.subject }}</a>
+              <a href="{{ deck_url }}">{{ deck.deck_name }}</a>
             </p>
             <small class="text-muted">
               Pages:
@@ -44,10 +40,6 @@
               {% endif %}
             </small>
           </td>
-          <td class="align-middle">{{ deck.starter.username }}</td>
-          <td class="align-middle">{{ deck.replies }}</td>
-          <td class="align-middle">{{ deck.views }}</td>
-          <td class="align-middle">{{ deck.last_updated|naturaltime }}</td>
         </tr>
       {% endfor %}
     </tbody>

@@ -1,391 +1,470 @@
-{
-    "_id": "75160211e6714d57ce28aacdeee39c15",
-    "name": "Eternal Weekend Asia 2019 - Old School Main Event",
-    "date": "17/08/2019",
-    "players": 0
-}{
-    "_id": "526e5dbb3fddca15706818583feb8f67",
-    "name": "LCOS 2019 - 8th tournament",
-    "date": "11/08/2019",
-    "players": 23
-}{
-    "_id": "3a48dc46b4e8c09cb1602767f02bb57b",
-    "name": "LCOS 2019 - 7th tournament",
-    "date": "14/07/2019",
-    "players": 31
-}{
-    "_id": "81ce951e10d5f547763638ac3f330860",
-    "name": "25 Liga Ilicitana Old School",
-    "date": "01/07/2019",
-    "players": 27
-}{
-    "_id": "d91d51a50aab93912ebad473f97e6e06",
-    "name": "LCOS 2019 - 6th tournament",
-    "date": "16/06/2019",
-    "players": 18
-}{
-    "_id": "8fdd22c9d526af396e4664a9aeade845",
-    "name": "Final Liga Madrile\u00f1a de Old School 2018/2019",
-    "date": "15/06/2019",
-    "players": 0
-}{
-    "_id": "d1daa058c51ec81a8d14446ec6718a2b",
-    "name": "[Los Angeles, CA] Knight Ware team legacy_vintage_93/94",
-    "date": "14/06/2019",
-    "players": 12
-}{
-    "_id": "7af0b3967285b9b25d00f78386ecf0a8",
-    "name": "Raiders Of The Hill 2.0",
-    "date": "19/05/2019",
-    "players": 40
-}{
-    "_id": "fc18d3525628a82eb643871823ae3e93",
-    "name": "LCOS 2019 - 5th tournament",
-    "date": "12/05/2019",
-    "players": 23
-}{
-    "_id": "dac751d5eee8e98fd029b03a77f11ca8",
-    "name": "LCOS 2019 - 4th tournament",
-    "date": "14/04/2019",
-    "players": 17
-}{
-    "_id": "c084f0d7a0035cc8b13053672c147298",
-    "name": "IV Tournament The Fellwar Stones Valencia (LVOS)",
-    "date": "03/04/2019",
-    "players": 13
-}{
-    "_id": "0d408ee90a6798f51b1a0c07608f73db",
-    "name": "LCOS 2019 - 3rd tournament",
-    "date": "24/03/2019",
-    "players": 23
-}{
-    "_id": "30580d8a34234c54d7caf09bf622bfc1",
-    "name": "Quinta tappa Lega Toscana Old School - I Predoni Del Poggio",
-    "date": "17/03/2019",
-    "players": 16
-}{
-    "_id": "11ab006880c325daa80bb3051a780589",
-    "name": "LCOS 2019 - 2nd tournament",
-    "date": "10/02/2019",
-    "players": 23
-}{
-    "_id": "cc621f94352a8177720a0247bd1d196f",
-    "name": "LCOS 2019 - 1st tournament",
-    "date": "13/01/2019",
-    "players": 23
-}{
-    "_id": "1d99bd5b8b54d42b9866194177de7da8",
-    "name": "Torneo Solidario LVOS (The Fellwar Stones Valencia)",
-    "date": "23/12/2018",
-    "players": 15
-}{
-    "_id": "c832a01371475d6988e9481f09d0894a",
-    "name": "Nebraska\u00b4s War 6 - Oldschool Main Event",
-    "date": "14/12/2018",
-    "players": 44
-}{
-    "_id": "94e28fbd7569be7ee66f2bafc8c5ad9a",
-    "name": "LCOS 2018 - 12th tournament",
-    "date": "09/12/2018",
-    "players": 18
-}{
-    "_id": "72541ea700b640810b6f55753aa8e94a",
-    "name": "LCOS 2018 - 11th tournament",
-    "date": "04/11/2018",
-    "players": 23
-}{
-    "_id": "abeeec9509ef4e6ac486d4bdd884d319",
-    "name": "Eternal Weekend 2018 - Old School Championship",
-    "date": "03/11/2018",
-    "players": 181
-}{
-    "_id": "d1fbb4ecafa2177844ef275f7bcb51f6",
-    "name": "Fishliver Oil Cup 2",
-    "date": "27/10/2018",
-    "players": 115
-}{
-    "_id": "b604147782aa51efe08f61b3c08acef5",
-    "name": "Columbus Friday Night (side event Fishliver Oil Cup 2, EC rules)",
-    "date": "26/10/2018",
-    "players": 70
-}{
-    "_id": "98bcc778f4ba6c129a21a94cea4ce61d",
-    "name": "LCOS 2018 - 10th tournament",
-    "date": "14/10/2018",
-    "players": 22
-}{
-    "_id": "763fa4c9409940ac08602d5f3904eda5",
-    "name": "LCOS 2018 - 9th tournament",
-    "date": "09/09/2018",
-    "players": 18
-}{
-    "_id": "0b4d6375cdc89352023789478e9dd107",
-    "name": "LCOS 2018 - 8th tournament",
-    "date": "12/08/2018",
-    "players": 17
-}{
-    "_id": "db15d3d101f256a96ba066919fa54f33",
-    "name": "Technoliga V Old School (Ronda Zero-Valencia)",
-    "date": "02/08/2018",
-    "players": 25
-}{
-    "_id": "ba7ca920c53a8e90aa80f37bf1e93de5",
-    "name": "Impact Returns Old School Event",
-    "date": "27/07/2018",
-    "players": 28
-}{
-    "_id": "10d1a02a377f9e93564c0f8773459b1f",
-    "name": "LCOS 2018 - 7th tournament",
-    "date": "08/07/2018",
-    "players": 24
-}{
-    "_id": "290b8fbb3afac2e1eeca121a0c442129",
-    "name": "Technoliga IV Old School (Ronda Zero-Valencia)",
-    "date": "21/06/2018",
-    "players": 23
-}{
-    "_id": "faf7971e85e315ba2e367a76d95b6c66",
-    "name": "Grand Prix Las Vegas 2018 - Old School Side Event",
-    "date": "14/06/2018",
-    "players": 92
-}{
-    "_id": "782c95a29c2eda853867b48036166b8c",
-    "name": "LCOS2018 - 6th tournament",
-    "date": "10/06/2018",
-    "players": 23
-}{
-    "_id": "b7b0bfc29779eb8aa411019a09e938e5",
-    "name": "Liga Madrile\u00f1a Old School Final",
-    "date": "09/06/2018",
-    "players": 15
-}{
-    "_id": "e4c672683e82bbc1e4f5551bdf33c2b5",
-    "name": "Old School at SCGCon 2018",
-    "date": "07/06/2018",
-    "players": 46
-}{
-    "_id": "4ddfb7d6e583bdd1063a425c6c47ad36",
-    "name": "LCOS 2018 - 5th tournament",
-    "date": "27/05/2018",
-    "players": 22
-}{
-    "_id": "141eecaaaaabc0bb272c969d639d9b5a",
-    "name": "Technoliga III Old School (Ronda Zero-Valencia)",
-    "date": "10/05/2018",
-    "players": 22
-}{
-    "_id": "e4cedd284a41d21a18173bb2d78d9a39",
-    "name": "Eternal Weekend 2018 - European Championship Old School",
-    "date": "05/05/2018",
-    "players": 45
-}{
-    "_id": "f1a352d2f79814e4be2dfe3f1752d470",
-    "name": "I Tournament LVOS George Best Valencia",
-    "date": "22/04/2018",
-    "players": 35
-}{
-    "_id": "76a7f1ce34065b28747eb1fcecb882d6",
-    "name": "8\u00b0 Liga Madrile\u00f1a de Old School",
-    "date": "21/04/2018",
-    "players": 23
-}{
-    "_id": "f1e060ebe63f0f181965201247859849",
-    "name": "LCOS 2018 - 4th tournament",
-    "date": "08/04/2018",
-    "players": 28
-}{
-    "_id": "f8ef53b3482209b04c1f76320dbecc04",
-    "name": "7\u00b0 Liga Madrile\u00f1a de Old School",
-    "date": "02/04/2018",
-    "players": 22
-}{
-    "_id": "a19e7610d5ab01ef281ec157be116ac6",
-    "name": "Technoliga II Old School (Ronda Zero-Valencia)",
-    "date": "29/03/2018",
-    "players": 12
-}{
-    "_id": "e016b04a5e79d7e5076f6cf487bbeaff",
-    "name": "10\u00ba Torneo Liga Ilicitana Old School (LIOS)",
-    "date": "25/03/2018",
-    "players": 23
-}{
-    "_id": "b399fef51abcba01c4f739e5708dd46d",
-    "name": "LCOS 2018 - 3rd tournament",
-    "date": "11/03/2018",
-    "players": 28
-}{
-    "_id": "25c786013846c354c2104973ebcf05a2",
-    "name": "9\u00ba Torneo Ilicitano Old school",
-    "date": "24/02/2018",
-    "players": 63
-}{
-    "_id": "255f77743056e84ee94864116f2fbf08",
-    "name": "LCOS 2018 - 2nd tournament",
-    "date": "18/02/2018",
-    "players": 12
-}{
-    "_id": "b9bb85c7ee1e01bc1aaeb6af35961256",
-    "name": "Santa Cruz Valentine\u00b4s Tournament (USA)",
-    "date": "17/02/2018",
-    "players": 16
-}{
-    "_id": "cbaedcf9cb39bfddc97c5beb787168d6",
-    "name": "Technoliga Old School (Ronda Zero-Valencia)",
-    "date": "08/02/2018",
-    "players": 10
-}{
-    "_id": "ae7feaa01aebbdbaf8aade85958a8b01",
-    "name": "8\u00ba Torneo Ilicitano Old school",
-    "date": "21/01/2018",
-    "players": 22
-}{
-    "_id": "d9d5662a5f31e5329ac4a01e3fd49a0b",
-    "name": "LCOS 2018 - 1st tournament",
-    "date": "14/01/2018",
-    "players": 21
-}{
-    "_id": "4e5a37683eaf5fb093a3001a3547bf1c",
-    "name": "LCOS 2017 - 10th tournament",
-    "date": "09/12/2017",
-    "players": 31
-}{
-    "_id": "61b4aa13c627a97288098d2bb8f0d8ea",
-    "name": "Old School Main Event @ Nebraska\u00b4s War 5.0",
-    "date": "02/12/2017",
-    "players": 74
-}{
-    "_id": "ad154cab698377fd10e25bfed606e999",
-    "name": "7\u00ba Torneo Ilicitano Old school",
-    "date": "19/11/2017",
-    "players": 28
-}{
-    "_id": "5e72f3d441995365b5f3221ed9722ff7",
-    "name": "LCOS 2017 - 9th tournament",
-    "date": "12/11/2017",
-    "players": 18
-}{
-    "_id": "02205c9f4f54a5638b9da32b563fbf30",
-    "name": "6\u00ba Torneo Ilicitano Old school",
-    "date": "29/10/2017",
-    "players": 21
-}{
-    "_id": "aa8e098a84e43e8fafe417d3debb9d6a",
-    "name": "Fishliver\u00b4s Oil Cup",
-    "date": "28/10/2017",
-    "players": 86
-}{
-    "_id": "a111a76ca736ffda5575a40d1ed148a8",
-    "name": "LCOS 2017 - Eighth Tournament",
-    "date": "08/10/2017",
-    "players": 28
-}{
-    "_id": "d2bb30a178b69d4b2c1348f2bd27f04c",
-    "name": "5\u00ba Torneo Ilicitano Old school",
-    "date": "08/10/2017",
-    "players": 23
-}{
-    "_id": "ec544584215c5085011e901e1ae51901",
-    "name": "Ovino XII - Old School Event",
-    "date": "30/09/2017",
-    "players": 47
-}{
-    "_id": "276ddb5807b692f41ff397104c2eaf47",
-    "name": "4\u00ba Torneo Liga Ilicitana Old School (LIOS)",
-    "date": "10/09/2017",
-    "players": 23
-}{
-    "_id": "26c3702d1d2ad0c991a681b8164631c0",
-    "name": "LCOS 2017 - Seventh Tournament",
-    "date": "03/09/2017",
-    "players": 16
-}{
-    "_id": "a00984d6ab8ecafc62afcc7660e5c510",
-    "name": "3\u00ba Torneo Ilicitano Old school",
-    "date": "30/07/2017",
-    "players": 23
-}{
-    "_id": "507899294c4325954890aee45779578d",
-    "name": "LCOS 2017 - Sixth Tournament",
-    "date": "30/07/2017",
-    "players": 25
-}{
-    "_id": "80666a8a7fa977f8b32a9c99ea77863c",
-    "name": "2\u00ba Torneo Ilicitano Old school",
-    "date": "09/07/2017",
-    "players": 19
-}{
-    "_id": "964c44395279c45e915750a4bfc21d20",
-    "name": "LCOS 2017 - Fifth Tournament",
-    "date": "02/07/2017",
-    "players": 25
-}{
-    "_id": "6285a6c63f94b36690c7c1f9f264d13e",
-    "name": "LCOS 2017 - Fourth Tournament",
-    "date": "11/06/2017",
-    "players": 26
-}{
-    "_id": "24fed69183da517ccf6ed70f9b36f446",
-    "name": "LCOS 2017 - Third Tournament",
-    "date": "07/05/2017",
-    "players": 30
-}{
-    "_id": "d894b3c1355927ff84d6f31efa17981b",
-    "name": "LCOS 2017 - Second Tournament",
-    "date": "02/04/2017",
-    "players": 32
-}{
-    "_id": "e4b84ced4a58956216cbc791ea0d874d",
-    "name": "LCOS 2017 - First Tournament",
-    "date": "05/02/2017",
-    "players": 37
-}{
-    "_id": "50304cbb76a7b3163e756ad3071c05d5",
-    "name": "Old School 93-94 at Eternal Weekend 2016 (USA)",
-    "date": "30/10/2016",
-    "players": 86
-}{
-    "_id": "4d545c7e85a225e9c243c7e056d75ecf",
-    "name": "Ovino XI - Oldschoolmain event",
-    "date": "25/09/2016",
-    "players": 60
-}{
-    "_id": "652207afd5c093c097eeab50db8b6063",
-    "name": "Grand Prix Los Angeles 2016",
-    "date": "20/05/2016",
-    "players": 16
-}{
-    "_id": "14adedc32c290cdf91e8e1f9a42602b1",
-    "name": "Chicago Old School 93-94",
-    "date": "15/05/2016",
-    "players": 15
-}{
-    "_id": "ace3335d0d2188f88d065db92027c70a",
-    "name": "Milano - OvinoSpring Old School Main Event",
-    "date": "24/04/2016",
-    "players": 51
-}{
-    "_id": "0ba58a2a57f124a6751bff6cc11c78c1",
-    "name": "Chicago Old School 93-94 February 2016",
-    "date": "05/02/2016",
-    "players": 12
-}{
-    "_id": "709b2a226360c6759fa5964f8e307a9f",
-    "name": "Czech Vintage and Legacy Series",
-    "date": "31/01/2016",
-    "players": 12
-}{
-    "_id": "7c3b7e92c8007f46c02ef05870071551",
-    "name": "Camaiore - Nebraska\u00b4s War 3 - Vintage Old School",
-    "date": "06/12/2015",
-    "players": 62
-}{
-    "_id": "619b8a7ecf322df351f14cfd8ce57223",
-    "name": "Ohio Old School 93-94",
-    "date": "11/10/2015",
-    "players": 12
-}{
-    "_id": "03768e42787dfb6e3fe01f0508bd5aa1",
-    "name": "Old School 93-94 at Eternal Weekend 2015",
-    "date": "23/08/2015",
-    "players": 54
-}
+[
+    {
+        "_id": "75160211e6714d57ce28aacdeee39c15",
+        "name": "Eternal Weekend Asia 2019 - Old School Main Event",
+        "date": "17/08/2019",
+        "players": 0
+    },
+    {
+        "_id": "526e5dbb3fddca15706818583feb8f67",
+        "name": "LCOS 2019 - 8th tournament",
+        "date": "11/08/2019",
+        "players": 23
+    },
+    {
+        "_id": "3a48dc46b4e8c09cb1602767f02bb57b",
+        "name": "LCOS 2019 - 7th tournament",
+        "date": "14/07/2019",
+        "players": 31
+    },
+    {
+        "_id": "81ce951e10d5f547763638ac3f330860",
+        "name": "25 Liga Ilicitana Old School",
+        "date": "01/07/2019",
+        "players": 27
+    },
+    {
+        "_id": "d91d51a50aab93912ebad473f97e6e06",
+        "name": "LCOS 2019 - 6th tournament",
+        "date": "16/06/2019",
+        "players": 18
+    },
+    {
+        "_id": "8fdd22c9d526af396e4664a9aeade845",
+        "name": "Final Liga Madrile\u00f1a de Old School 2018/2019",
+        "date": "15/06/2019",
+        "players": 0
+    },
+    {
+        "_id": "d1daa058c51ec81a8d14446ec6718a2b",
+        "name": "[Los Angeles, CA] Knight Ware team legacy_vintage_93/94",
+        "date": "14/06/2019",
+        "players": 12
+    },
+    {
+        "_id": "7af0b3967285b9b25d00f78386ecf0a8",
+        "name": "Raiders Of The Hill 2.0",
+        "date": "19/05/2019",
+        "players": 40
+    },
+    {
+        "_id": "fc18d3525628a82eb643871823ae3e93",
+        "name": "LCOS 2019 - 5th tournament",
+        "date": "12/05/2019",
+        "players": 23
+    },
+    {
+        "_id": "dac751d5eee8e98fd029b03a77f11ca8",
+        "name": "LCOS 2019 - 4th tournament",
+        "date": "14/04/2019",
+        "players": 17
+    },
+    {
+        "_id": "c084f0d7a0035cc8b13053672c147298",
+        "name": "IV Tournament The Fellwar Stones Valencia (LVOS)",
+        "date": "03/04/2019",
+        "players": 13
+    },
+    {
+        "_id": "0d408ee90a6798f51b1a0c07608f73db",
+        "name": "LCOS 2019 - 3rd tournament",
+        "date": "24/03/2019",
+        "players": 23
+    },
+    {
+        "_id": "30580d8a34234c54d7caf09bf622bfc1",
+        "name": "Quinta tappa Lega Toscana Old School - I Predoni Del Poggio",
+        "date": "17/03/2019",
+        "players": 16
+    },
+    {
+        "_id": "11ab006880c325daa80bb3051a780589",
+        "name": "LCOS 2019 - 2nd tournament",
+        "date": "10/02/2019",
+        "players": 23
+    },
+    {
+        "_id": "cc621f94352a8177720a0247bd1d196f",
+        "name": "LCOS 2019 - 1st tournament",
+        "date": "13/01/2019",
+        "players": 23
+    },
+    {
+        "_id": "1d99bd5b8b54d42b9866194177de7da8",
+        "name": "Torneo Solidario LVOS (The Fellwar Stones Valencia)",
+        "date": "23/12/2018",
+        "players": 15
+    },
+    {
+        "_id": "c832a01371475d6988e9481f09d0894a",
+        "name": "Nebraska\u00b4s War 6 - Oldschool Main Event",
+        "date": "14/12/2018",
+        "players": 44
+    },
+    {
+        "_id": "94e28fbd7569be7ee66f2bafc8c5ad9a",
+        "name": "LCOS 2018 - 12th tournament",
+        "date": "09/12/2018",
+        "players": 18
+    },
+    {
+        "_id": "72541ea700b640810b6f55753aa8e94a",
+        "name": "LCOS 2018 - 11th tournament",
+        "date": "04/11/2018",
+        "players": 23
+    },
+    {
+        "_id": "abeeec9509ef4e6ac486d4bdd884d319",
+        "name": "Eternal Weekend 2018 - Old School Championship",
+        "date": "03/11/2018",
+        "players": 181
+    },
+    {
+        "_id": "d1fbb4ecafa2177844ef275f7bcb51f6",
+        "name": "Fishliver Oil Cup 2",
+        "date": "27/10/2018",
+        "players": 115
+    },
+    {
+        "_id": "b604147782aa51efe08f61b3c08acef5",
+        "name": "Columbus Friday Night (side event Fishliver Oil Cup 2, EC rules)",
+        "date": "26/10/2018",
+        "players": 70
+    },
+    {
+        "_id": "98bcc778f4ba6c129a21a94cea4ce61d",
+        "name": "LCOS 2018 - 10th tournament",
+        "date": "14/10/2018",
+        "players": 22
+    },
+    {
+        "_id": "763fa4c9409940ac08602d5f3904eda5",
+        "name": "LCOS 2018 - 9th tournament",
+        "date": "09/09/2018",
+        "players": 18
+    },
+    {
+        "_id": "0b4d6375cdc89352023789478e9dd107",
+        "name": "LCOS 2018 - 8th tournament",
+        "date": "12/08/2018",
+        "players": 17
+    },
+    {
+        "_id": "db15d3d101f256a96ba066919fa54f33",
+        "name": "Technoliga V Old School (Ronda Zero-Valencia)",
+        "date": "02/08/2018",
+        "players": 25
+    },
+    {
+        "_id": "ba7ca920c53a8e90aa80f37bf1e93de5",
+        "name": "Impact Returns Old School Event",
+        "date": "27/07/2018",
+        "players": 28
+    },
+    {
+        "_id": "10d1a02a377f9e93564c0f8773459b1f",
+        "name": "LCOS 2018 - 7th tournament",
+        "date": "08/07/2018",
+        "players": 24
+    },
+    {
+        "_id": "290b8fbb3afac2e1eeca121a0c442129",
+        "name": "Technoliga IV Old School (Ronda Zero-Valencia)",
+        "date": "21/06/2018",
+        "players": 23
+    },
+    {
+        "_id": "faf7971e85e315ba2e367a76d95b6c66",
+        "name": "Grand Prix Las Vegas 2018 - Old School Side Event",
+        "date": "14/06/2018",
+        "players": 92
+    },
+    {
+        "_id": "782c95a29c2eda853867b48036166b8c",
+        "name": "LCOS2018 - 6th tournament",
+        "date": "10/06/2018",
+        "players": 23
+    },
+    {
+        "_id": "b7b0bfc29779eb8aa411019a09e938e5",
+        "name": "Liga Madrile\u00f1a Old School Final",
+        "date": "09/06/2018",
+        "players": 15
+    },
+    {
+        "_id": "e4c672683e82bbc1e4f5551bdf33c2b5",
+        "name": "Old School at SCGCon 2018",
+        "date": "07/06/2018",
+        "players": 46
+    },
+    {
+        "_id": "4ddfb7d6e583bdd1063a425c6c47ad36",
+        "name": "LCOS 2018 - 5th tournament",
+        "date": "27/05/2018",
+        "players": 22
+    },
+    {
+        "_id": "141eecaaaaabc0bb272c969d639d9b5a",
+        "name": "Technoliga III Old School (Ronda Zero-Valencia)",
+        "date": "10/05/2018",
+        "players": 22
+    },
+    {
+        "_id": "e4cedd284a41d21a18173bb2d78d9a39",
+        "name": "Eternal Weekend 2018 - European Championship Old School",
+        "date": "05/05/2018",
+        "players": 45
+    },
+    {
+        "_id": "f1a352d2f79814e4be2dfe3f1752d470",
+        "name": "I Tournament LVOS George Best Valencia",
+        "date": "22/04/2018",
+        "players": 35
+    },
+    {
+        "_id": "76a7f1ce34065b28747eb1fcecb882d6",
+        "name": "8\u00b0 Liga Madrile\u00f1a de Old School",
+        "date": "21/04/2018",
+        "players": 23
+    },
+    {
+        "_id": "f1e060ebe63f0f181965201247859849",
+        "name": "LCOS 2018 - 4th tournament",
+        "date": "08/04/2018",
+        "players": 28
+    },
+    {
+        "_id": "f8ef53b3482209b04c1f76320dbecc04",
+        "name": "7\u00b0 Liga Madrile\u00f1a de Old School",
+        "date": "02/04/2018",
+        "players": 22
+    },
+    {
+        "_id": "a19e7610d5ab01ef281ec157be116ac6",
+        "name": "Technoliga II Old School (Ronda Zero-Valencia)",
+        "date": "29/03/2018",
+        "players": 12
+    },
+    {
+        "_id": "e016b04a5e79d7e5076f6cf487bbeaff",
+        "name": "10\u00ba Torneo Liga Ilicitana Old School (LIOS)",
+        "date": "25/03/2018",
+        "players": 23
+    },
+    {
+        "_id": "b399fef51abcba01c4f739e5708dd46d",
+        "name": "LCOS 2018 - 3rd tournament",
+        "date": "11/03/2018",
+        "players": 28
+    },
+    {
+        "_id": "25c786013846c354c2104973ebcf05a2",
+        "name": "9\u00ba Torneo Ilicitano Old school",
+        "date": "24/02/2018",
+        "players": 63
+    },
+    {
+        "_id": "255f77743056e84ee94864116f2fbf08",
+        "name": "LCOS 2018 - 2nd tournament",
+        "date": "18/02/2018",
+        "players": 12
+    },
+    {
+        "_id": "b9bb85c7ee1e01bc1aaeb6af35961256",
+        "name": "Santa Cruz Valentine\u00b4s Tournament (USA)",
+        "date": "17/02/2018",
+        "players": 16
+    },
+    {
+        "_id": "cbaedcf9cb39bfddc97c5beb787168d6",
+        "name": "Technoliga Old School (Ronda Zero-Valencia)",
+        "date": "08/02/2018",
+        "players": 10
+    },
+    {
+        "_id": "ae7feaa01aebbdbaf8aade85958a8b01",
+        "name": "8\u00ba Torneo Ilicitano Old school",
+        "date": "21/01/2018",
+        "players": 22
+    },
+    {
+        "_id": "d9d5662a5f31e5329ac4a01e3fd49a0b",
+        "name": "LCOS 2018 - 1st tournament",
+        "date": "14/01/2018",
+        "players": 21
+    },
+    {
+        "_id": "4e5a37683eaf5fb093a3001a3547bf1c",
+        "name": "LCOS 2017 - 10th tournament",
+        "date": "09/12/2017",
+        "players": 31
+    },
+    {
+        "_id": "61b4aa13c627a97288098d2bb8f0d8ea",
+        "name": "Old School Main Event @ Nebraska\u00b4s War 5.0",
+        "date": "02/12/2017",
+        "players": 74
+    },
+    {
+        "_id": "ad154cab698377fd10e25bfed606e999",
+        "name": "7\u00ba Torneo Ilicitano Old school",
+        "date": "19/11/2017",
+        "players": 28
+    },
+    {
+        "_id": "5e72f3d441995365b5f3221ed9722ff7",
+        "name": "LCOS 2017 - 9th tournament",
+        "date": "12/11/2017",
+        "players": 18
+    },
+    {
+        "_id": "02205c9f4f54a5638b9da32b563fbf30",
+        "name": "6\u00ba Torneo Ilicitano Old school",
+        "date": "29/10/2017",
+        "players": 21
+    },
+    {
+        "_id": "aa8e098a84e43e8fafe417d3debb9d6a",
+        "name": "Fishliver\u00b4s Oil Cup",
+        "date": "28/10/2017",
+        "players": 86
+    },
+    {
+        "_id": "a111a76ca736ffda5575a40d1ed148a8",
+        "name": "LCOS 2017 - Eighth Tournament",
+        "date": "08/10/2017",
+        "players": 28
+    },
+    {
+        "_id": "d2bb30a178b69d4b2c1348f2bd27f04c",
+        "name": "5\u00ba Torneo Ilicitano Old school",
+        "date": "08/10/2017",
+        "players": 23
+    },
+    {
+        "_id": "ec544584215c5085011e901e1ae51901",
+        "name": "Ovino XII - Old School Event",
+        "date": "30/09/2017",
+        "players": 47
+    },
+    {
+        "_id": "276ddb5807b692f41ff397104c2eaf47",
+        "name": "4\u00ba Torneo Liga Ilicitana Old School (LIOS)",
+        "date": "10/09/2017",
+        "players": 23
+    },
+    {
+        "_id": "26c3702d1d2ad0c991a681b8164631c0",
+        "name": "LCOS 2017 - Seventh Tournament",
+        "date": "03/09/2017",
+        "players": 16
+    },
+    {
+        "_id": "a00984d6ab8ecafc62afcc7660e5c510",
+        "name": "3\u00ba Torneo Ilicitano Old school",
+        "date": "30/07/2017",
+        "players": 23
+    },
+    {
+        "_id": "507899294c4325954890aee45779578d",
+        "name": "LCOS 2017 - Sixth Tournament",
+        "date": "30/07/2017",
+        "players": 25
+    },
+    {
+        "_id": "80666a8a7fa977f8b32a9c99ea77863c",
+        "name": "2\u00ba Torneo Ilicitano Old school",
+        "date": "09/07/2017",
+        "players": 19
+    },
+    {
+        "_id": "964c44395279c45e915750a4bfc21d20",
+        "name": "LCOS 2017 - Fifth Tournament",
+        "date": "02/07/2017",
+        "players": 25
+    },
+    {
+        "_id": "6285a6c63f94b36690c7c1f9f264d13e",
+        "name": "LCOS 2017 - Fourth Tournament",
+        "date": "11/06/2017",
+        "players": 26
+    },
+    {
+        "_id": "24fed69183da517ccf6ed70f9b36f446",
+        "name": "LCOS 2017 - Third Tournament",
+        "date": "07/05/2017",
+        "players": 30
+    },
+    {
+        "_id": "d894b3c1355927ff84d6f31efa17981b",
+        "name": "LCOS 2017 - Second Tournament",
+        "date": "02/04/2017",
+        "players": 32
+    },
+    {
+        "_id": "e4b84ced4a58956216cbc791ea0d874d",
+        "name": "LCOS 2017 - First Tournament",
+        "date": "05/02/2017",
+        "players": 37
+    },
+    {
+        "_id": "50304cbb76a7b3163e756ad3071c05d5",
+        "name": "Old School 93-94 at Eternal Weekend 2016 (USA)",
+        "date": "30/10/2016",
+        "players": 86
+    },
+    {
+        "_id": "4d545c7e85a225e9c243c7e056d75ecf",
+        "name": "Ovino XI - Oldschoolmain event",
+        "date": "25/09/2016",
+        "players": 60
+    },
+    {
+        "_id": "652207afd5c093c097eeab50db8b6063",
+        "name": "Grand Prix Los Angeles 2016",
+        "date": "20/05/2016",
+        "players": 16
+    },
+    {
+        "_id": "14adedc32c290cdf91e8e1f9a42602b1",
+        "name": "Chicago Old School 93-94",
+        "date": "15/05/2016",
+        "players": 15
+    },
+    {
+        "_id": "ace3335d0d2188f88d065db92027c70a",
+        "name": "Milano - OvinoSpring Old School Main Event",
+        "date": "24/04/2016",
+        "players": 51
+    },
+    {
+        "_id": "0ba58a2a57f124a6751bff6cc11c78c1",
+        "name": "Chicago Old School 93-94 February 2016",
+        "date": "05/02/2016",
+        "players": 12
+    },
+    {
+        "_id": "709b2a226360c6759fa5964f8e307a9f",
+        "name": "Czech Vintage and Legacy Series",
+        "date": "31/01/2016",
+        "players": 12
+    },
+    {
+        "_id": "7c3b7e92c8007f46c02ef05870071551",
+        "name": "Camaiore - Nebraska\u00b4s War 3 - Vintage Old School",
+        "date": "06/12/2015",
+        "players": 62
+    },
+    {
+        "_id": "619b8a7ecf322df351f14cfd8ce57223",
+        "name": "Ohio Old School 93-94",
+        "date": "11/10/2015",
+        "players": 12
+    },
+    {
+        "_id": "03768e42787dfb6e3fe01f0508bd5aa1",
+        "name": "Old School 93-94 at Eternal Weekend 2015",
+        "date": "23/08/2015",
+        "players": 54
+    }
+]

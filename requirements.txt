@@ -1,6 +1,8 @@
 beautifulsoup4==4.8.0
 Django==2.2.4
-django-widget-tweaks==1.4.1
+django-widget-tweaks==1.4.5
 djongo==1.2.35
 Markdown==2.6.9
 requests==2.22.0
+sqlparse==0.2.4
+

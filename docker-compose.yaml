@@ -1,0 +1,72 @@
+version: "3"
+
+volumes:
+  data-db:
+
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    volumes:
+      - ./data-db:/data/db
+      - ./data/files:/tmp/
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mongoadmin
+      MONGO_INITDB_DATABASE: decks
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: mongoadmin
+      ME_CONFIG_MONGODB_SERVER: mongodb
+
+  migration:
+    build: .
+    image: app
+    restart: on-failure
+    command: bash -c "wait && python manage.py migrate"
+    environment:
+      WAIT_HOSTS: mongodb:27017
+    volumes:
+      - .:/oldschoolmtgdb
+    links:
+      - mongodb
+    depends_on:
+      - make_migrations
+
+  make_migrations:
+    build: .
+    image: app
+    restart: on-failure
+    command: bash -c "wait && python manage.py makemigrations"
+    environment:
+      WAIT_HOSTS: mongodb:27017
+    volumes:
+      - .:/oldschoolmtgdb
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+
+  web:
+    image: app
+    restart: always
+    command: bash -c "wait && python manage.py runserver 0.0.0.0:8000"
+    environment:
+      WAIT_HOSTS: mongodb:27017
+      WAIT_AFTER_HOSTS: 30
+    volumes:
+      - .:/oldschoolmtgdb
+    ports:
+      - 8000:8000
+    links:
+      - mongodb
+    depends_on:
+      - migration

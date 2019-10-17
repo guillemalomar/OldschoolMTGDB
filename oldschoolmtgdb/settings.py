@@ -94,6 +94,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'decks',
+        'HOST': 'mongodb',
+        'PORT': 27017,
+        'USER': 'root',
+        'PASSWORD': 'mongoadmin',
+        'AUTH_SOURCE': 'admin',
+        'AUTH_MECHANISM': 'SCRAM-SHA-1',
     }
 }
 

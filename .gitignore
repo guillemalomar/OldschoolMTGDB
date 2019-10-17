@@ -56,6 +56,9 @@ coverage.xml
 local_settings.py
 db.sqlite3
 
+# Docker Database volume
+data-db
+
 # Flask stuff:
 instance/
 .webassets-cache

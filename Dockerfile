@@ -1,5 +1,6 @@
 FROM python:3.7
 
+# Install wait to wait for MongoDB
 ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.6.0/wait /usr/local/bin/wait
 RUN chmod +x /usr/local/bin/wait
 
